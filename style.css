@@ -262,3 +262,33 @@ footer {
 .primary-btn:hover {
     background-color: #555;
 }
+
+/* Phase 8 CSS - Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .home-content-split,
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .text-content,
+    .image-gallery-split,
+    .contact-info,
+    .contact-gallery {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .hero-image {
+        height: 250px;
+    }
+    
+    .products-gallery {
+        grid-template-columns: 1fr;
+    }
+}
